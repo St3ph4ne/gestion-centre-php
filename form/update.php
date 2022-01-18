@@ -10,36 +10,31 @@
     </head>
 
     <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" id="home-redirect">
+                    <h3> <a href="../home.php">Home</a></h3>
+                    <hr>
+                </div>
 
-        <div>  
-        
-            <!-- menu deroulant -->
-            <?php include "./tables/menu.php" ?>
+                <div class="col-md-4" id="form-modif">
+                    <h3>Update...</h3>
 
-            <!-- table generé -->
-            <?php include "./tables/menubar.php" ?>
-            <hr>
+                    <!-- generation de la page -->
+                    <?php
+                        if (isset($_GET["table"])) {
+                            $page = $_GET['table'];
+                            include "./{$page}.php";
+
+                        }else {
+                            include "./tables/user.php";
+                        }
+                    ?>
+                </div>
+
+                <div class="col-md-4"></div>
+            </div>
         </div>
-
-
-        <!-- generation de la page -->
-        <?php
-            if (isset($_GET["table"])) {
-                $param = $_GET['table'];
-                $page = "./tables/{$param}.php";
-
-                if (is_file($page)) {
-                    include $page;
-
-                } else include "./tables/user.php";
-                
-
-            }else {
-                include "./tables/user.php";
-            }
-        ?>
-
-        <br /> </br>
     </body>
 
 

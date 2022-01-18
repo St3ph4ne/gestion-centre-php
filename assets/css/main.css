@@ -1,0 +1,101 @@
+#menuBar {
+    margin-top: 35px;
+}
+
+#menuBar h3{
+    margin-left: 25px;
+}
+
+#menuBar h3 a{
+    text-decoration: none;
+    color: white;
+}
+
+#menuBarItem{
+    background-color: black;
+}
+
+#menuBarItem li a{
+    text-decoration: none;
+}
+
+#menuBar > button{
+    background-color: yellow;
+    color: black;
+    margin-left: 700px;
+}
+
+.tabName {
+    text-align: center;
+    color: black;
+}
+
+tr > th{
+    text-align: center;
+}
+
+.bodyTable {
+    background-color: gray;
+}
+
+#table {
+    background-color: yellow;
+}
+
+#alert-suppr {
+    margin-top: 200px;
+    background-color: yellow;
+    padding: 10px;
+
+    box-shadow: 30px 15px 30px maroon;
+}
+
+#alert-suppr p{
+    color: maroon;
+}
+
+#alert-suppr button{
+    padding: 10px;
+    margin: 10px;
+}
+
+.body-alert {
+    background-color: grey;
+}
+
+.body-form-modif {
+    background-color: grey;
+}
+
+#form-modif {
+    margin-top: 150px;
+    background-color: yellow;
+}
+
+#form-modif h3{
+    padding: 10px;  
+}
+
+.body-welcome {
+    background-color: grey;
+}
+
+#welcome-home {
+    margin-top: 150px;
+    color: white;
+}
+
+#welcome-home a{
+    margin-top: 150px;
+    color: white;
+    text-decoration: none;
+}
+
+#home-redirect {
+    margin-top: 15px;
+}
+
+#home-redirect h3 a{
+    text-decoration: none;
+    color: white;
+}

@@ -11,35 +11,7 @@
 
     <body>
 
-        <div>  
-        
-            <!-- menu deroulant -->
-            <?php include "./tables/menu.php" ?>
 
-            <!-- table generé -->
-            <?php include "./tables/menubar.php" ?>
-            <hr>
-        </div>
-
-
-        <!-- generation de la page -->
-        <?php
-            if (isset($_GET["table"])) {
-                $param = $_GET['table'];
-                $page = "./tables/{$param}.php";
-
-                if (is_file($page)) {
-                    include $page;
-
-                } else include "./tables/user.php";
-                
-
-            }else {
-                include "./tables/user.php";
-            }
-        ?>
-
-        <br /> </br>
     </body>
 
 
