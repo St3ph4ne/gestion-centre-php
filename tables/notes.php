@@ -2,7 +2,7 @@
  
     include "./pdo/dbconn.php";
 
-    $sql_request = "SELECT * FROM `activite`;";
+    $sql_request = "SELECT * FROM `note`;";
 
     $request = $CONN -> prepare($sql_request);
     $request -> execute();
@@ -20,16 +20,16 @@
 
             <div class="col-md-3" id="table">
                 <table class="table table-bordered border-primary table-hover border-dark">
-                    <h5 class="tabName">Table Activité</h5>
-                    <a href="../form/post.php?table=activite"><button class='btn btn-primary'>Add new activitie</button></a>
+                    <h5 class="tabName">Table notes</h5>
+                    <a href="../form/post.php?table=note"><button class='btn btn-primary'>Add new note</button></a>
 
                     <thead class="table-dark">
                         <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">NOM</th>
-                        <th scope="col">COUT</th>
-                        <th scope="col">PRIX</th>
-                        <th scope="col" colspan="2">ACTION</th>
+                            <th scope="col">ID</th>
+                            <th scope="col">SEANCE ID</th>
+                            <th scope="col">USER ID</th>
+                            <th scope="col">NOTE</th>
+                            <th scope="col" colspan="2">ACTION</th>
                         </tr>
                     </thead>
                     
@@ -38,11 +38,11 @@
                         " <tbody>
                                 <tr>
                                     <th scope='row'>{$result['id']}</th>
-                                    <td>{$result['name']}</td>
-                                    <td>{$result['cout']}</td>
-                                    <td>{$result['prix']}</td>
-                                    <td> <a href='./form/update.php?table=activite&id={$result['id']}'><button class='btn btn-primary'>Update</button></a> </td>
-                                    <td> <a href='./remove.php?table=activite&id={$result['id']}'><button class='btn btn-danger'>Delete</button></a> </td>
+                                    <td>{$result['id_seance']}</td>
+                                    <td>{$result['id_User']}</td>
+                                    <td>{$result['note']}</td>
+                                    <td> <a href='./form/update.php?table=note&id={$result['id']}'><button class='btn btn-primary'>Update</button></a> </td>
+                                    <td> <a href='./remove.php?table=note&id={$result['id']}'><button class='btn btn-danger'>Delete</button></a> </td>
                                 </tr>
                             </tbody>"
                         ?>

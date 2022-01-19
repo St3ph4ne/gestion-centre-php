@@ -20,7 +20,7 @@
 }
 
 #menuBar > button{
-    background-color: yellow;
+    background-color: rgb(65, 125, 243);
     color: black;
     margin-left: 700px;
 }
@@ -39,12 +39,12 @@ tr > th{
 }
 
 #table {
-    background-color: yellow;
+    background-color: rgb(42, 225, 245);
 }
 
 #alert-suppr {
     margin-top: 200px;
-    background-color: yellow;
+    background-color: rgb(48, 209, 245);
     padding: 10px;
 
     box-shadow: 30px 15px 30px maroon;
@@ -69,7 +69,7 @@ tr > th{
 
 #form-modif {
     margin-top: 150px;
-    background-color: yellow;
+    background-color: rgb(42, 225, 245);
 }
 
 #form-modif h3{

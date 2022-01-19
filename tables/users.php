@@ -2,7 +2,7 @@
  
     include "./pdo/dbconn.php";
 
-    $sql_request = "SELECT * FROM User;";
+    $sql_request = "SELECT * FROM users;";
 
     $request = $CONN -> prepare($sql_request);
     $request -> execute();
@@ -21,7 +21,7 @@
 
             <div class="col-md-5" id="table">
                 <table class="table table-bordered border-primary table-hover border-dark">
-                    <h5 class="tabName">Table User</h5>
+                    <h5 class="tabName">Table users</h5>
                     <a href="../form/post.php?table=user"><button class='btn btn-primary'>Add new user</button></a>
 
                     <thead class="table-dark">
